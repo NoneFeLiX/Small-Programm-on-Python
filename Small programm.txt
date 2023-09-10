@@ -1,0 +1,17 @@
+name = input("Ваше имя: ")
+pas = input("Придумайте пароль: ")
+
+print(f"Привет, {name}!")
+print(f"Запомните Ваш пароль: {pas}")
+
+visit = input("Имя пользователя: ")
+pas = input("Пароль: ")
+
+while visit:
+    if input("Имя пользователя: ") == name:
+        if input("Пароль: ") == pas:
+            if pas:
+                print("Вы успешно вошли в свой аккаунт!")
+            else:
+                print("Вы неправильно ввели данные: ")
+            visit = False
